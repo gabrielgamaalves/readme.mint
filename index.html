@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>readme.mint</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
+
+    <style id="PageTheme"></style>
+    <style id="GithubTheme"></style>
+
+</head>
+<body>
+    <header>
+        <figure>
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+            width="720.000000pt" height="884.000000pt" viewBox="0 0 720.000000 884.000000"
+            preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,884.000000) scale(0.100000,-0.100000)"
+                fill="#000000" stroke="none">
+                    <path d="M3095 8438 c-280 -137 -823 -402 -1205 -588 -382 -186 -924 -452
+                    -1205 -591 l-509 -252 84 -41 c47 -22 227 -111 400 -196 173 -86 329 -162 346
+                    -169 30 -12 47 -4 600 279 313 161 894 459 1291 662 l722 370 633 -320 c348
+                    -176 927 -469 1287 -651 360 -182 658 -331 663 -331 12 0 828 409 828 415 0 8
+                    -731 370 -1320 655 -278 134 -860 416 -1294 627 -434 211 -794 383 -800 382
+                    -6 0 -240 -113 -521 -251z"/>
+                    <path d="M160 4380 c0 -1100 3 -2000 8 -2000 4 0 169 87 367 194 l360 193 3
+                    1191 2 1191 183 -88 c100 -49 364 -177 587 -286 223 -108 590 -287 815 -397
+                    226 -110 572 -279 769 -376 l360 -175 40 16 c23 8 385 183 806 387 1233 600
+                    1834 891 1847 897 10 4 13 -241 15 -1192 l3 -1197 365 -184 c201 -101 368
+                    -183 373 -184 4 0 7 896 7 1991 0 1655 -2 1990 -13 1987 -8 -2 -781 -391
+                    -1719 -865 -938 -475 -1711 -863 -1718 -863 -8 0 -333 164 -724 364 -391 200
+                    -981 502 -1311 671 -330 169 -783 401 -1007 516 -223 115 -409 209 -412 209
+                    -3 0 -6 -900 -6 -2000z"/>
+                    <path d="M585 1979 c-220 -116 -404 -215 -408 -218 -4 -4 68 -44 160 -89 92
+                    -44 395 -193 673 -330 278 -137 609 -299 736 -360 128 -61 481 -233 785 -383
+                    305 -149 674 -329 821 -401 l266 -130 259 125 c142 69 584 283 983 477 399
+                    194 912 442 1140 552 228 110 554 270 724 356 l308 157 -422 208 -421 208
+                    -432 -219 c-238 -121 -815 -414 -1284 -651 l-851 -431 -484 246 c-265 136
+                    -699 358 -963 494 -708 365 -1171 600 -1181 600 -5 0 -189 -95 -409 -211z"/>
+                </g>
+            </svg>
+        </figure>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-github"></i>Github</a></li>
+                    <li><a href=""><i class="fa-regular fa-file-circle-info"></i>Sobre o projeto</a></li>
+                    <li><a href=""><i class="fa-regular fa-mug-saucer"></i>Ajude o programador</a></li>
+                </ul>
+            </nav>
+            <div class="modetheme">
+                <input type="checkbox" name="" id="themeBtn" class="dropdown_mth">
+                <label class="for-dropdown_mth" for="themeBtn">
+                    <i class="fa-regular fa-circle-half-stroke theme_mode" title="lightmode"></i>
+                </label>
+
+                <div class="menudrop_mth">
+                    <i class="fa-solid fa-caret-up"></i>
+                    <ul id="themesUl">
+                        <li onclick="e(0)"><p>light</p>
+                            <div class="themeview">
+                                <i class="fa-solid fa-caret-left"></i>
+                                <img src="https://github.githubassets.com/images/modules/settings/color_modes/light_preview.svg" alt="">
+                            </div>
+                        </li>
+                        <li onclick="e(1)"><p>dark default</p>
+                            <div class="themeview"><i class="fa-solid fa-caret-left"></i><img src="https://github.githubassets.com/images/modules/settings/color_modes/dark_preview.svg" alt="">
+                            </div>
+                        </li>
+                        <li onclick="e(2)"><p>dark high contrast</p>
+                            <div class="themeview">
+                                <i class="fa-solid fa-caret-left"></i>
+                                <img src="https://github.githubassets.com/images/modules/settings/color_modes/dark_high_contrast_preview.svg" alt="">
+                            </div>
+                        </li>
+                        <li onclick="e(3)"><p>dark dimmed</p>
+                            <div class="themeview">
+                                <i class="fa-solid fa-caret-left"></i>
+                                <img src="https://github.githubassets.com/images/modules/settings/color_modes/dark_dimmed_preview.svg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="js/theme.js"></script>
+    <script>
+        const themesUl = document.getElementById("themesUl")
+        // e lement
+        function e(i){                        
+            const theme = themesUl.children[i].innerText.replace(/ /g, "_")
+            themeSelect(theme)
+        }
+        
+    </script>
+</body>
+</html>
