@@ -60,7 +60,7 @@
                     <i class="fa-regular fa-circle-half-stroke theme_mode" title="lightmode"></i>
                 </label>
 
-                <div class="menudrop_mth">
+                <div class="menudrop_mth" id="menudropMth">
                     <i class="fa-solid fa-caret-up"></i>
                     <ul id="themesUl">
                         <li onclick="e(0)"><p>light</p>
@@ -98,8 +98,20 @@
         function e(i){                        
             const theme = themesUl.children[i].innerText.replace(/ /g, "_")
             themeSelect(theme)
+
+            document.getElementById("themeBtn").checked = false
+            document.getElementById("menudropMth").style.display = 'none'
         }
-        
+
+        document.getElementById("themeBtn").addEventListener("click", () => {
+            if(document.getElementById("themeBtn").checked === true){
+                document.getElementById("menudropMth").style.display = 'block'
+            }
+            else if(document.getElementById("themeBtn").checked === false){
+                document.getElementById("menudropMth").style.display = 'none'
+            }
+        })
+
     </script>
 </body>
 </html>

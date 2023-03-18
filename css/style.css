@@ -89,9 +89,9 @@ header nav ul a:hover{
 .dropdown_mth:checked + label .theme_mode{
     background-color: var(--bg-third);
 }
-.dropdown_mth:checked ~ .menudrop_mth{
+/* .dropdown_mth:checked ~ .menudrop_mth{
     display: block !important;
-}
+} */
 
 .modetheme .menudrop_mth{
     display: none;
